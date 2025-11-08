@@ -2,8 +2,82 @@
 #include <vector>
 using namespace std;
 
-//Problem 17
+//Problem 20
+/*int main() {
+    int n; cin>>n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++)
+        cin>>v[i];
+    for (int i = 0; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                    if (v[j-1] > v[j]) {
+                            int temp = v[j];
+                            v[j] = v[j-1];
+                            v[j-1] = temp;
+                    }
+            }
+    }
+    int max2 = v[n-2];
+    cout<<max2<<endl;
 
+    return 0;
+}*/
+
+//Problem 19
+/*int main() {
+    int n; cin>>n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++)
+        cin>>v[i];
+    for (int i = 0; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                    if (v[j-1] > v[j]) {
+                            int a = v[j];
+                            v[j] = v[j-1];
+                            v[j-1] = a;
+                    }
+            }
+    }
+    for (int i = 0; i < n; i++) cout<<v[i]<<" ";
+
+    return 0;
+}*/
+
+//Problme 18
+/*int main() {
+    int n; cin>>n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++)
+        cin>>v[i];
+    for(int i=0;i<v.size(); i++) {
+            for(int j=i+1;j<v.size();j++) {
+                    if (v[i]==v[j])
+                        v.erase(v.begin()+j);
+            }
+    }
+    for(int i=0;i<v.size();i++) cout<<v[i]<<" ";
+
+    return 0;
+}*/
+
+//Problem 17
+/*int main() {
+    int n, x, k; cin >> n;
+    vector<int> v(n);
+    vector<int> g(n+1);
+    for (int i = 0; i < n; i++)
+        cin >> v[i];
+    cout<<"x = "; cin >> x;
+    cout<<"k = "; cin >> k;
+    for (int i = 0; i < n+1; i++) {
+            if (i<k) g[i] = v[i];
+            else if (i==k) g[i] = x;
+            else g[i] = v[i-1];
+            cout<<g[i]<<" ";
+    }
+
+    return 0;
+}*/
 
 //Problem 16
 /*int main() {
